@@ -44,7 +44,7 @@ util.AddNetworkString( "meshtools.ExportSTool" )
 
 local function isPropOwner( ply, ent )
     if CPPI then
-        return Entity:CPPIGetOwner() == ply
+        return ent:CPPIGetOwner() == ply
     end
 
     for k, v in pairs( g_SBoxObjects ) do
